@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quién tormentas es quién?</title>
+    <link rel="stylesheet" href="Stormlight.css">
+    <script src="Stormlight.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="titulo">¿Quién es Quién? - Versión Archivo de las Tormentas</h1>
+    </header>
+    <main>
+      <div id="tu_personaje">
+        <label for="personajeElegido">Elige tu personaje:</label>
+        <select name="personajeElegido" id="personajeElegido" onchange="actualizarPersonaje()">
+          <option value="Kaladin">Kaladin</option>
+          <option value="Syl">Syl</option>
+          <option value="El Hermano">El Hermano</option>
+          <option value="Maya">Maya</option>
+          <option value="Lopen">Lopen</option>
+          <option value="Renarin">Renarin</option>
+          <option value="Rlain">Rlain</option>
+          <option value="Sebarial">Sebarial</option>
+          <option value="Palona">Palona</option>
+          <option value="Padre Tormenta">Padre Tormenta</option>
+          <option value="Fen">Fen</option>
+          <option value="Szeth">Szeth</option>
+          <option value="Lift">Lift</option>
+          <option value="Wyndle">Wyndle</option>
+          <option value="Patron">Patrón</option>
+          <option value="Marfil">Marfil</option>
+          <option value="Sigzil">Sigzil</option>
+          <option value="Dalinar">Dalinar</option>
+          <option value="Navani">Navani</option>
+          <option value="Teft">Teft</option>
+          <option value="Lunamor">Roca</option>
+          <option value="Shallan">Shallan</option>
+          <option value="Adolin">Adolin</option>
+          <option value="Elhokar">Elhokar</option>
+          <option value="Jasnah">Jasnah</option>
+        </select>
+        <p>Tu personaje</p>
+        <img id="imagenPersonaje" src="Retratos/Kaladin.png">
+      </div>
+      <div id="adivina">
+        <table>
+          <tr>
+            <td><img class="retrato" id="Kaladin" src="Retratos/Kaladin.png" onclick="tacharPersonaje(this)"></td>
+            <td><img class="retrato" id="Syl" src="Retratos/Syl.png" onclick="tacharPersonaje(this)"></td>
+            <td><img class="retrato" id="El Hermano" src="Retratos/El Hermano.png" onclick="tacharPersonaje(this)"></td>
+            <td><img class="retrato" id="Maya" src="Retratos/Maya.png" onclick="tacharPersonaje(this)"></td>
+            <td><img class="retrato" id="Lopen" src="Retratos/Lopen.png" onclick="tacharPersonaje(this)"></td>
+          </tr>
+          <tr>
+            <td><img class="retrato" id="Renarin" src="Retratos/Renarin.png" onclick="tacharPersonaje(this)"></td> <!--Justo sus imagenes eran de base normal y determinado-->
+            <td><img class="retrato" id="Rlain" src="Retratos/Rlain.png" onclick="tacharPersonaje(this)"></td>
+            <td><img class="retrato" id="Palona" src="Retratos/Palona.png" onclick="tacharPersonaje(this)"></td>
+            <td><img class="retrato" id="Sebarial" src="Retratos/Sebarial.png" onclick="tacharPersonaje(this)"></td>
+            <td><img class="retrato" id="Padre Tormenta" src="Retratos/Padre Tormenta.png" onclick="tacharPersonaje(this)"></td>
+          </tr>
+          <tr>
+            <td><img class="retrato" id="Fen" src="Retratos/Fen.png" onclick="tacharPersonaje(this)"></td>
+            <td><img class="retrato" id="Szeth" src="Retratos/Szeth.png" onclick="tacharPersonaje(this)"></td>
+            <td><img class="retrato" id="Lift" src="Retratos/Lift.png" onclick="tacharPersonaje(this)"></td>
+            <td><img class="retrato" id="Wyndle" src="Retratos/Wyndle.png" onclick="tacharPersonaje(this)"></td>
+            <td><img class="retrato" id="Patron" src="Retratos/Patron.png" onclick="tacharPersonaje(this)"></td>
+          </tr>
+          <tr>
+            <td><img class="retrato" id="Marfil" src="Retratos/Marfil.png" onclick="tacharPersonaje(this)"></td>
+            <td><img class="retrato" id="Sigzil" src="Retratos/Sigzil.png" onclick="tacharPersonaje(this)"></td>
+            <td><img class="retrato" id="Dalinar" src="Retratos/Dalinar.png" onclick="tacharPersonaje(this)"></td>
+            <td><img class="retrato" id="Navani" src="Retratos/Navani.png" onclick="tacharPersonaje(this)"></td>
+            <td><img class="retrato" id="Teft" src="Retratos/Teft.png" onclick="tacharPersonaje(this)"></td>
+          </tr>
+          <tr>
+            <td><img class="retrato" id="Lunamor" src="Retratos/Lunamor.png" onclick="tacharPersonaje(this)"></td>
+            <td><img class="retrato" id="Shallan" src="Retratos/Shallan.png" onclick="tacharPersonaje(this)"></td>
+            <td><img class="retrato" id="Adolin" src="Retratos/Adolin.png" onclick="tacharPersonaje(this)"></td>
+            <td><img class="retrato" id="Elhokar" src="Retratos/Elhokar.png" onclick="tacharPersonaje(this)"></td>
+            <td><img class="retrato" id="Jasnah" src="Retratos/Jasnah.png" onclick="tacharPersonaje(this)"></td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <!-- <p>Holi cariño, esto lo estoy haciendo poco a poco, no sé para cuándo lo tendré pero espero que te guste</p> -->
+    </footer>
+  </body>
+</html>
